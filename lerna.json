@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0", 
+  "npmClient": "yarn", 
+  "useWorkspaces": true, 
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [ 
+        ".gitignore",
+        "*.log",
+        "*.md"
+      ],
+      "bootstrap": { 
+        "ignore": "npm-*",  
+        "hoist": true,
+        "npmClientArgs": [
+            "--no-package-lock"
+        ]
+      },
+      "allowBranch": ["master"]
+    }
+  }
+}
