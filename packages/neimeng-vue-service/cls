@@ -1,0 +1,62 @@
+[1mdiff --git a/src/views/procurement-plan/PurchaseFlagDetail.vue b/src/views/procurement-plan/PurchaseFlagDetail.vue[m
+[1mindex 04827f9..cdf03d4 100644[m
+[1m--- a/src/views/procurement-plan/PurchaseFlagDetail.vue[m
+[1m+++ b/src/views/procurement-plan/PurchaseFlagDetail.vue[m
+[36m@@ -216,7 +216,7 @@[m
+               <el-col :span="12">[m
+                 <el-form-item label="项目性质" prop="projectNature" :rules="validate.vdRadio(true)">[m
+                   <el-select v-model="form.projectNature" placeholder="请选择">[m
+[31m-                    <el-option v-for="item in globalSetting.common.projectNature" :key="item.code" :label="item.name"[m
+[32m+[m[32m                    <el-option v-for="item in projectNatureArr" :key="item.code" :label="item.name"[m
+                       :value="item.code"></el-option>[m
+                   </el-select>[m
+                 </el-form-item>[m
+[36m@@ -1110,6 +1110,12 @@[m [mexport default {[m
+         Authorization: "Bearer " + this.$store.state.loginCookie.access_token,[m
+       },[m
+       upUrl_: util.uploadingUrl() + "project/improtExcel.do?type=0",[m
+[32m+[m[32m      projectNatureArr: [[m
+[32m+[m[32m        ...this.globalSetting.common.projectNature,[m
+[32m+[m[32m        { code: 7, name: "运行维护类" },[m
+[32m+[m[32m        { code: 8, name: "设备维修、维保类" },[m
+[32m+[m[32m        { code: 9, name: "其他" },[m
+[32m+[m[32m      ][m
+     };[m
+   },[m
+   created () {[m
+[1mdiff --git a/src/views/proj-manager/components/ProjectDetail.vue b/src/views/proj-manager/components/ProjectDetail.vue[m
+[1mindex 570c6ac..0cb91f7 100644[m
+[1m--- a/src/views/proj-manager/components/ProjectDetail.vue[m
+[1m+++ b/src/views/proj-manager/components/ProjectDetail.vue[m
+[36m@@ -109,7 +109,7 @@[m
+                 <el-form-item label="项目性质" prop="xmXingZhi">[m
+                   <el-select v-model="baseDataForm.xmXingZhi" placeholder="请选择"[m
+                     :disabled="!!baseDataForm.iscxzb || commissionSheetNo">[m
+[31m-                    <el-option v-for="item in xmXingZhioptions" :key="item.id" :value="item.value" :label="item.label">[m
+[32m+[m[32m                    <el-option v-for="item in xmXingZhioptions" :key="item.code" :value="item.code" :label="item.name">[m
+                     </el-option>[m
+                   </el-select>[m
+                 </el-form-item>[m
+[36m@@ -750,7 +750,12 @@[m [mexport default {[m
+       industryTypeoptions: [],[m
+       industryTypeoptions2: [],[m
+       zuZhiXingShioptions: [],[m
+[31m-      xmXingZhioptions: [],[m
+[32m+[m[32m      xmXingZhioptions: [[m
+[32m+[m[32m        ...this.globalSetting.common.projectNature,[m
+[32m+[m[32m        { code: 7, name: "运行维护类" },[m
+[32m+[m[32m        { code: 8, name: "设备维修、维保类" },[m
+[32m+[m[32m        { code: 9, name: "其他" },[m
+[32m+[m[32m      ],[m
+       multipleSelection: [],[m
+       methods: "",[m
+       identity: "",[m
+[36m@@ -801,7 +806,7 @@[m [mexport default {[m
+     this.projectTypeoptions = this.enum.ProjectType;[m
+     this.purchaseTypeoptions = this.enum.PurchaseType;[m
+     this.zuZhiXingShioptions = this.enum.zuZhiXingShi;[m
+[31m-    this.xmXingZhioptions = this.enum.xmXingZhi;[m
+[32m+[m[32m    // this.xmXingZhioptions = this.enum.xmXingZhi;[m
+     if (this.method == "edit") {[m
+       this.breadcrumbList[2].label = "编辑";[m
+     } else if (this.method == "checkout") {[m

@@ -1,0 +1,107 @@
+{
+  "id": "2151457",
+  "name": "项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "zl-icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17808619",
+      "name": "1-工作台",
+      "font_class": "1-gongzuotai",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "17808620",
+      "name": "3-采购计划",
+      "font_class": "3-caigoujihua",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "17808621",
+      "name": "5-项目管理",
+      "font_class": "5-xiangmuguanli",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "17808622",
+      "name": "2-待办事项",
+      "font_class": "2-daibanshixiang",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "17808623",
+      "name": "4-项目采购委托",
+      "font_class": "4-xiangmucaigouweituo",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "17808624",
+      "name": "6-费用管理",
+      "font_class": "6-feiyongguanli",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "17808625",
+      "name": "9-异议管理",
+      "font_class": "9-yiyiguanli",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "17808626",
+      "name": "7-项目保证金",
+      "font_class": "7-xiangmubaozhengjin",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "17808627",
+      "name": "8-保证金管理icon",
+      "font_class": "8-baozhengjinguanliicon",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "17808628",
+      "name": "10-常用资料",
+      "font_class": "10-changyongziliao",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "17808629",
+      "name": "11-会议预约",
+      "font_class": "11-huiyiyuyue",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "17808630",
+      "name": "13-提交工单",
+      "font_class": "13-tijiaogongdan",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "17808631",
+      "name": "14-消息提醒",
+      "font_class": "14-xiaoxitixing",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "17808632",
+      "name": "12-归档管理_pressed",
+      "font_class": "12-guidangguanli_pressed",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    }
+  ]
+}

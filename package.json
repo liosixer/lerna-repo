@@ -1,7 +1,8 @@
 {
   "name": "root",
   "private": true,
-  "npmClient": true,
+  "npmClient": "yarn",
+  "useWorkspaces": true,
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
@@ -20,6 +21,7 @@
     }
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "taro": "lerna run dev:h5 --scope taro-demo"
   }
 }
