@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "poseidon-god-cookery-client",
+  "appid": "touristappid",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
