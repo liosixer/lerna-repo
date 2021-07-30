@@ -1,0 +1,11 @@
+{
+  "name": "hermos-common",
+  "version": "1.0.0",
+  "description": "公共服务区",
+  "main": "index.js",
+  "author": "liosixer",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.47.1"
+  }
+}
