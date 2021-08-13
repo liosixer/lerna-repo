@@ -1,0 +1,20 @@
+query Books($episode: Episode, $mine: Boolean!) {
+  books(episode: $episode) {
+    name
+    author @include(if: $mine) { # skip & include
+      name
+    }
+  }
+}
+
+
+mutation CreateReviewForEpisode($ep: Episode!, $review: ReviewInput!) {
+  createReview(episode: $ep, review: $review) {
+    stars
+    commentary
+  }
+}
+
+# fragment BookField on Books {
+
+# }
