@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-08-09 11:34:17
- * @LastEditTime: 2021-08-09 14:57:25
+ * @LastEditTime: 2021-08-18 10:29:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \lerna-repo\packages\hermos-graphql-center\src\schema\author.schema.ts
